@@ -1,0 +1,26 @@
+extends base.pug
+block scripts
+  script(src='../static/index.js')
+block style 
+    style 
+        include ../static/stylecontact.css
+        include ../static/style.css
+block content
+    nav#navbar 
+        ul
+          img(src="/static/logo.png", alt="")
+          .container
+            |ABCD Academy   
+          li #[a(href="/") Home]
+          li #[a(href="/") About ]
+          li #[a(href="/Contact") Contact]
+          li #[a(href="/") Services]  
+    h3 Contact Us
+    hr
+    form(action= "/Contact", method= "post", class= "myform")
+        <input type="text" name="name" placeholder="Enter your name..">
+        <input type="phone"  name ="phone" placeholder="Enter your phone..">
+        <input type="email"  name="email" placeholder="Enter your email..">
+        <input type="text"  name="address" placeholder="Your address..">
+        button.btn 
+            |Submit         

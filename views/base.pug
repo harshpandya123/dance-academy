@@ -1,0 +1,21 @@
+//- base.pug
+doctype html
+html
+  head
+    title ABCD Dance Academy
+    block scripts
+    block style   
+  body
+    block content
+      nav#navbar 
+        ul
+          img(src="/static/logo.png", alt="")
+          .container
+            |ABCD Academy   
+          li #[a(href="/") Home]
+          li #[a(href="/") About ]
+          li #[a(href="/") Contact]
+          li #[a(href="/") Services]                
+    block foot
+      footer#footer 
+        |Copywrite © ABCDDanceAcademy | All rights reserved.

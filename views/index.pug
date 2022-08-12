@@ -1,0 +1,57 @@
+doctype html 
+html  
+    head
+    title ABCD Dance Academy
+    style
+        include ../static/style.css
+    body
+        nav#navbar 
+            ul
+                img(src="/static/logo.png", alt="")
+                .container 
+                    |ABCD Academy   
+                li #[a(href="/") Home]
+                li #[a(href="/") About ]
+                li #[a(href="/") Contact]
+                li #[a(href="/") Services]
+        section#introsection 
+            div.wel Welcome to ABCD 
+            div.small Academy
+        section#missionsection 
+            h2 Our Missions
+            div.card
+                p Dance Perfection
+
+                    .card-img 
+                    img(src="/static/img1.png", alt="none")
+                    .card-content 
+                        |This is the best Academy for Dance
+            div.card
+                p Dance India Dance moves
+         
+                    .card-img2 
+                    img(src="/static/img2.jpg", alt="none")
+                    .card-content 
+                        |This is the best Academy for Dance
+            div.card
+                p Expert Teaching
+                
+                    .card-img 
+                    img(src="/static/img3.png", alt="none")
+                    .card-content 
+                        |This is the best Academy for Dance
+                
+
+        section#sponsorssection 
+            h2 Our Sponsors
+            .sponsors 
+                img(src="/static/apple.png", alt="none",class="apple") 
+                img(src="/static/facebook.jpg", alt="none",class="facebook") 
+                img(src="/static/microsoft.png", alt="none",class="microsoft") 
+                img(src="/static/google.png", alt="none",class="google") 
+                img(src="/static/insta.jpg", alt="none",class="insta") 
+        footer#footer 
+            |Copywrite © ABCDDanceAcademy | All rights reserved.
+    html
+            
+

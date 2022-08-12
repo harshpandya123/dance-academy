@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Baloo+Bhaijaan+2&family=Girassol&family=IBM+Plex+Mono:wght@100&family=Monoton&family=Pacifico&family=Rubik+Glitch&family=Sacramento&family=Special+Elite&family=Ubuntu:wght@300&display=swap');
+h3{
+    text-align: center;
+    color: grey;
+    font-family: 'Monoton', cursive;
+    font-size: 40px;
+    background-color:rgb(1, 1, 44);
+    
+
+}
+input{
+    display: block;
+    margin:13px auto;
+}
+.btn{
+    margin-left: 630px;
+    border:2px solid black;
+    color:white;
+    background-color: grey;
+    height: 30px;
+    width:50px;
+    cursor: pointer;
+    margin-top: 10px;
+    
+    border-radius: 10px;
+}
+.btn:hover{
+    color:lightgreen;
+}
+.myform{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    outline: none;
+    background-color:#53c977;
+}
