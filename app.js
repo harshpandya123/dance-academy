@@ -1,10 +1,11 @@
+require('dotenv').config();
 const express = require("express");
 const fs = require("fs");
 const path = require("path");
 const contact=fs.readFileSync('./views/contact.pug')
 
 const app = express();
-const port = 80;
+const port = process.env.PORT || 3000;
 
 
 // EXPRESS SPECIFIC STUFF

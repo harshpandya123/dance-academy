@@ -1,1 +1,1 @@
-web: node index.pug
+web: node app.js
