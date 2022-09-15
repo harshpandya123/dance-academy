@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require("express");
 const fs = require("fs");
 const path = require("path");
-const contact=fs.readFileSync('./views/contact.pug')
+const contact = fs.readFileSync('./views/contact.pug')
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -21,28 +21,28 @@ app.set('views', path.join(__dirname, 'views')) // Set the views directory
 
 //     res.status(200).render('base.pug');
 // })
-app.get('/Contact', (req, res)=>{ 
+app.get('/Contact', (req, res) => {
 
     res.status(200).render('contact.pug');
 })
-app.get('/', (req, res)=>{ 
+app.get('/', (req, res) => {
 
     res.status(200).render('index.pug');
 })
 
-app.post('/Contact',(req,res)=>{
+app.post('/Contact', (req, res) => {
     // console.log(req.body)
-    name=req.body.name
-    phone=req.body.phone
-    email=req.body.email
-    address=req.body.address
-    let outputToWrite=`name is${name}.phone no is ${phone}.email is ${email}.address is ${address}`
-    fs.writeFileSync('output.txt',outputToWrite)
-    const params = {'message': 'Your form has been submitted successfully'}
+    name = req.body.name
+    phone = req.body.phone
+    email = req.body.email
+    address = req.body.address
+    let outputToWrite = `name is${name}.phone no is ${phone}.email is ${email}.address is ${address}`
+    fs.writeFileSync('output.txt', outputToWrite)
+    const params = { 'message': 'Your form has been submitted successfully' }
     res.status(200).render('contact.pug', params);
 })
 
 // START THE SERVER 
-app.listen(port, ()=>{
+app.listen(port, () => {
     console.log(`The application started successfully on port ${port}`);
 });
